@@ -1,1 +1,9 @@
-
+p1=Point()
+p2=Point()
+p1.move(2,6)
+p2.move(5,9)
+print(p2.calculate_distance(p1))
+assert(p2.calculate_distance(p1))==(p1.calculate_distance(p2))
+p1.move(3,40)
+print(p1.calculate_distance(p2))
+print(p2.calculate_distance(p1))
